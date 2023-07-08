@@ -1,0 +1,364 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Pre css */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.nav_image {
+  display: flex;
+  min-width: 55px;
+  justify-content: center;
+}
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 270px;
+  background: #182828;
+  padding: 15px 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  z-index:9
+}
+.sidebar.close {
+  width: calc(55px + 20px);
+}
+.logo_items {
+  gap: 8px;
+}
+.logo_name {
+  font-size: 22px;
+  color: #d8d3d3;
+  font-weight: 500px;
+  transition: all 0.3s ease;
+}
+.sidebar.close .logo_name,
+.sidebar.close #lock-icon,
+.sidebar.close #sidebar-close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#sidebar-close {
+  padding: 10px;
+  color: #4070f4;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: -4px;
+  transition: all 0.5s ease;
+}
+#sidebar-close {
+
+  color: #f8eeee;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  overflow-y: auto;
+  height: calc(100% - 82px);
+}
+.menu_container::-webkit-scrollbar {
+  display: none;
+}
+.menu_title {
+  position: relative;
+  height: 50px;
+  width: 55px;
+}
+.menu_title .title {
+  margin-left: 15px;color:#e2dfdf;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+.sidebar.close .title {
+  opacity: 0;
+}
+.menu_title .line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 20px;
+  border-radius: 25px;
+  background: #aaa;
+  
+  transition: all 0.3s ease;
+}
+.menu_title .line {
+  opacity: 0;
+}
+.sidebar.close .line {
+  opacity: 1;
+}
+.item {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #707070;
+}
+.link:hover {
+  color: #fff;
+  background-color: #97abe2;
+}
+.link span {
+  white-space: nowrap;
+}
+.link i {
+  height: 50px;
+  min-width: 55px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.sidebar_profile {
+  padding-top: 15px;
+  margin-top: 15px;
+  gap: 15px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar_profile .name {
+  font-size: 18px;
+  color: #333;
+}
+.sidebar_profile .email {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 0 0 8px 8px;
+  justify-content: space-between; z-index: 999,
+}
+#sidebar-open {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+.search_box {
+  height: 46px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #333;
+}
+.navbar img {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  .navbar {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    left: 0;
+    z-index: 1000;transition: all 0.5s ease;
+  }
+  .sidebar.close {
+    left: -100%;transition: all 0.5s ease;
+  }
+  #sidebar-close {
+    display: block;
+    transition: all 0.5s ease;
+  }
+  
+  .navbar {
+    left: 0;
+    max-width: 100%;
+    transform: translateX(0%);
+  }
+  #sidebar-open {
+    display: block;transition: all 0.5s ease;
+  }
+
+  .hero{
+    margin:1rem;
+    padding-left: 0rem;
+  }
+ 
+ 
+}
+.mobilenav{
+  
+    opacity:1;
+    padding:0.5rem;
+    
+    font-family: 'Russo One', sans-serif;
+}
+
+@media screen and (min-width:1200px){
+    .section2{
+        margin-left:7rem;
+        padding-top: 2rem;
+      }
+      .mobilenav{
+        padding:1rem;
+         font-size: larger;
+      }
+    
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+}
+
+.div .bx{
+    background-color:goldenrod;
+    padding:0.3rem
+}
+
+.section1{
+    position: sticky;
+    height: 80px;
+    top: 10px;
+    
+}
+
+
+
+
+
+@media screen and (min-width:1100px){
+  .section2_1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:1rem
+  }
+  .section2_2{
+    margin:3rem;
+    padding:2rem;
+  }
+  
+}
+.logoimage img{
+  height:auto;
+  width:20rem;
+mix-blend-mode: overlay;
+  display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+
+@media screen and (max-width:700px){
+  .section2_1{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:1rem;
+  }
+}
+
+.moto{
+  margin:1rem;
+  color:rgb(252, 250, 250);
+  display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;mix-blend-mode:color-dodge;
+}
+.section2_1{
+  
+  margin:0.2rem;
+
+  font-size: large;
+
+ 
+}
+
+
+.section2_2{
+  margin:1rem;
+  padding-left: 0rem;
+  display:flex;
+  gap:1rem;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.it{
+  margin:1rem;
+  padding: 0.5rem;
+  display:flex;
+  font-size:2rem;
+  gap:1rem;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;background-color: #aaa;
+   
+    border-radius:40px;
+    transition: all 0.5s ease;
+}
+
+
+body{
+  background-color: 	#161616;
+  
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  
+}
+
+.it:hover{ background-color:#333;
+ transform:  translateY(-10px);
+ 
+}

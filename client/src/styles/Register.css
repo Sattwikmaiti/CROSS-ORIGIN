@@ -1,0 +1,47 @@
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center center;
+    align-items: center;
+    margin-top: 10rem;
+   
+    
+    
+}
+
+
+
+
+
+.input-container{
+    margin:1rem;
+    
+}
+
+.input-container input{
+    padding:0.8rem;
+}
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content: center center;
+    padding:1rem;
+    align-items: center; background-color: rgba(141, 149, 177, 0.404);
+}
+
+.button-container input{
+    padding:0.8rem;
+    outline:none;
+    border:none;
+    background-color: black;
+    color:white;
+}
+
+
+.input{
+    padding:0.8rem;
+    outline:none;
+    border:none;
+    background-color: black;
+    color:white;
+}
