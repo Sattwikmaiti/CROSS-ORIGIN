@@ -52,6 +52,7 @@ const verifyToken = (req, res, next) => {
       
         const newUser = new User({
           username: req.body.username,
+          profilename:req.body.profilename,
           email: req.body.email,
          profileimagelink:req.body.profileimagelink,
          isAdmin:false,
@@ -137,7 +138,7 @@ const verifyToken = (req, res, next) => {
             { new: true }
           );
       console.log(updatedUser);
-          res.status(200).json(hashedPassword);
+          res.status(200).json(updatedUser);
         } catch (err) {
           res.status(500).json(err);
         }

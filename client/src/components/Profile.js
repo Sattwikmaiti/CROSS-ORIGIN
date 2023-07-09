@@ -1,6 +1,8 @@
 import React ,{useState,useEffect}from 'react'
 import "../styles/Profile.css"
+import { ToastContainer, toast } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
 import Box from '@mui/material/Box';
 import {useNavigate,Link} from "react-router-dom"
@@ -9,9 +11,10 @@ import Modal from '@mui/material/Modal';
 
 const Profile = () => {
   const navigate=useNavigate()
- 
-    const handleSubmit = async (e) => {
+  
 
+    const handleSubmit = async (e) => {
+      const notify = () => toast("Profile is Updated!");
 
         e.preventDefault();
         try {
@@ -19,16 +22,18 @@ const Profile = () => {
             username:username,
             password:password,
             email:email,
+            profilename:profilename,
             profileimagelink:profileimagelink,
       
-          }).then((response) =>{;navigate('/profile')});
+          });
          // localStorage.setItem("user",res.data._id);
-          
+         notify()
          // console.log(res.data)
          
           
         } catch (err) {
-          window.location.reload('/profile');
+          notify()
+          
           console.log(err)
         }
       };
@@ -37,6 +42,7 @@ const Profile = () => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
   const [profileimagelink, setProfileimagelink] = useState('');
+  const [profilename, setProfilename] = useState('');
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {setOpen(true);}
     const handleClose = () => setOpen(false);
@@ -46,6 +52,7 @@ const Profile = () => {
        //console.log(res.data.user)
     setusers(res.data)
     console.log(res.data.user)
+    setProfilename(res.data.user.profilename);
     setUsername(res.data.user.username);
     setEmail(res.data.user.email);
     setPassword(res.data.originalPassword);
@@ -68,7 +75,8 @@ const Profile = () => {
         p: 4,
       };
       
-
+      
+      
   return (
     <div>
        
@@ -88,9 +96,30 @@ const Profile = () => {
                 USERNAME : {users?.user.username}
             </div>
             <div className="profiledetails">
+                PROFILENAME : {users?.user.profilename}
+            </div>
+            <div className="profiledetails">
             EMAIL : {users?.user.email}
             </div>
-           
+
+            <div className="profiledetails">
+              <div className="contributions">
+                {users?.user.contributions.length} Contributions
+              </div>
+            </div>
+            <div className="profiledetails">
+              <div className="followers">
+                {users?.user.followers.length} Followers
+              </div>
+            </div>
+            <div className="profiledetails">
+              <div className="contributions">
+                {users?.user.savedarticles.length} Saved Articles
+              </div>
+            </div>
+       
+
+
             <div className="edit">
             <i class='bx bxs-edit' onClick={handleOpen}></i>
             <Modal
@@ -113,9 +142,9 @@ const Profile = () => {
          <input
         type="text"
        
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        placeholder="ProfileName"
+        value={profilename}
+        onChange={(e) => setProfilename(e.target.value)}
       />
       </div>
       <div className="input-container">
@@ -150,6 +179,7 @@ const Profile = () => {
         </div>
       <div className=" button-container input-container">
       <button  className="input" onClick={handleSubmit}>Update</button>
+      <ToastContainer />
       </div>
         </div>
       </form>
@@ -158,6 +188,8 @@ const Profile = () => {
       </Modal>
             </div>
             
+
+
            
         </div>
       

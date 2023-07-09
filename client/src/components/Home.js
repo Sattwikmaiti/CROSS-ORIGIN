@@ -4,9 +4,11 @@ import {Link} from "react-router-dom"
 import AppBar from '@mui/material/AppBar';
 import logo from "../images/logo.jpg"
 import "../styles/Home.css"
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 const Home = () => {
+  
     const [users,setusers]=useState()
-
+   
     useEffect(() =>{
 
     axios.get(`http://localhost:8000/api/users/userdetails/${localStorage.getItem('user')}`).then((res)=>{setusers(res.data)}).catch((err)=>console.log(err))
@@ -22,6 +24,7 @@ const Home = () => {
   const toggleSidebar = () => {
     setClosed(!closed);
   };
+
 
 
     
@@ -64,10 +67,11 @@ const Home = () => {
               <span className="line"></span>
             </div>
             <li className="item">
-              <a href="#" className="link flex">
-              <i class='bx bxs-briefcase-alt-2'></i>
+              
+              <Link to="/job" className="link flex">
+                <i className="bx bxs-briefcase-alt-2"></i>
                 <span>Job / Internships</span>
-              </a>
+              </Link>
             </li>
             <li className="item">
               <a href="#" className="link flex">
@@ -80,6 +84,13 @@ const Home = () => {
               <i class='bx bxl-dev-to' ></i>
                 <span>Edu Hub</span>
               </a>
+            </li>
+            <li className="item">
+              
+              <Link to="/gpt" className="link flex" style={{padding:'0.3rem'}}>
+                <SmartToyIcon/>
+                <span>AI CHAT</span>
+              </Link>
             </li>
           </ul>
           
@@ -125,11 +136,12 @@ const Home = () => {
           <div className="moto">
           <h3>About US</h3>
             <p>
-            Cross Origin is driven by a powerful vision to bridge the gap between students and valuable job/internship opportunities they often miss out on.We, a  dynamic platform that gathers comprehensive information about ongoing hackathons. Our goal is to provide students with easy access to a centralized hub of hackathon opportunities from various sources. By curating and updating a database of hackathons, we ensure that students stay informed about the latest events and can participate in the ones that align with their interests and skills. We understand the significance of hackathons in fostering creativity, innovation, and collaboration, which are essential for personal and professional growth. Through our efforts, we aim to empower students by connecting them to these exciting opportunities and helping them explore their potential in a competitive and rapidly evolving technological landscape.
-            We are Open-Source Organization and we are always open to new ideas and contributions.
-
+           "Cross Origin is driven by a powerful vision to bridge the gap between students and valuable job/internship opportunities they often miss out on.We, a  dynamic platform that gathers comprehensive information about ongoing hackathons. Our goal is to provide students with easy access to a centralized hub of hackathon opportunities from various sources. By curating and updating a database of hackathons, we ensure that students stay informed about the latest events and can participate in the ones that align with their interests and skills. We understand the significance of hackathons in fostering creativity, innovation, and collaboration, which are essential for personal and professional growth. Through our efforts, we aim to empower students by connecting them to these exciting opportunities and helping them explore their potential in a competitive and rapidly evolving technological landscape. We are Open-Source Organization and we are always open to new ideas and contributions. "
+          
+          
             </p>
 
+ 
           </div>
 
 

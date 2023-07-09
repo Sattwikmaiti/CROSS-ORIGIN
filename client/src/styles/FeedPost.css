@@ -1,0 +1,61 @@
+.img_pod img{
+    height:3rem;
+    width:3rem;
+    border-radius:100px;
+    position:absolute;
+    padding:0.2rem;
+    border:2px solid rgb(155, 147, 147)
+
+}
+
+
+.likes{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap:1.5rem;
+    margin:0.5rem;
+    font-size:1.5rem
+}
+
+.edits{
+    display:flex;
+    flex-direction:row;
+    justify-content: end;
+    gap:1.5rem;
+    margin:0.5rem;
+    font-size:1.5rem
+
+}
+
+.categories{
+    margin:0.2rem
+}
+
+.directlink{
+    font-size:1.3rem;
+    color:white
+}
+
+.container_copy p{
+    font-size:1rem
+}
+.postdesc{
+    width:90%;
+    word-wrap: break-word;
+    white-space: initial;
+ margin:0.4rem;
+ padding:0.4rem;
+opacity:0.6;
+background-color: dimgray;
+
+ 
+}
+
+.postcredits{
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    margin:0.2rem
+}
+
