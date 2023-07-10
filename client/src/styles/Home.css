@@ -39,7 +39,7 @@
   z-index:9
 }
 .sidebar.close {
-  width: calc(55px + 20px);
+  width: calc(80px + 20px);
 }
 .logo_items {
   gap: 8px;
@@ -62,7 +62,7 @@
   color: #4070f4;
   font-size: 25px;
   cursor: pointer;
-  margin-left: -4px;
+  margin-left: -3px;
   transition: all 0.5s ease;
 }
 #sidebar-close {
@@ -86,7 +86,7 @@
   width: 55px;
 }
 .menu_title .title {
-  margin-left: 15px;color:#e2dfdf;
+ color:#e2dfdf;
   font-size: large;
   transition: all 0.3s ease;
 }
@@ -233,7 +233,7 @@
 
 @media screen and (min-width:1200px){
     .section2{
-        margin-left:7rem;
+        margin-left:10rem;
         padding-top: 2rem;
       }
       .mobilenav{

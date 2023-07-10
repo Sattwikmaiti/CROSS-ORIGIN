@@ -6,6 +6,8 @@ import Register from './components/Register.js'
 import Profile from './components/Profile.js'
 import Job from './components/Job.js'
 import Gpt from './components/Gpt.js'
+import College from './components/College.js'
+import Hackathon from './components/Hackathon.js'
 import {
   BrowserRouter as Router,
   Routes,
@@ -25,7 +27,8 @@ const App = () => {
         <Route exact path="/profile" element={<Profile />}/>
         <Route exact path="/job" element ={<Job />}/>
         <Route exact path="/gpt" element ={<Gpt/>}/>
-       
+        <Route exact path="/college" element ={<College/>}/>
+        <Route exact path="/hackathon" element ={<Hackathon/>}/>
       </Routes>
     </Router>
       

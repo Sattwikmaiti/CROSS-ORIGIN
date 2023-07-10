@@ -74,21 +74,24 @@ const Home = () => {
               </Link>
             </li>
             <li className="item">
-              <a href="#" className="link flex">
-              <i class='bx bx-medal'></i>
-                <span>Hackathon/Challenges</span>
-              </a>
+              <Link to="/hackathon" className="link flex">
+              <i class='bx bxl-dev-to'></i>
+                <span>Edu-a-Ton</span>
+              </Link>
             </li>
+           
             <li className="item">
-              <a href="#" className="link flex">
-              <i class='bx bxl-dev-to' ></i>
-                <span>Edu Hub</span>
+              <a href="/college" className="link flex">
+              <i class='bx bxs-graduation'></i>
+                <span>Collge Connect</span>
               </a>
             </li>
+            
             <li className="item">
               
-              <Link to="/gpt" className="link flex" style={{padding:'0.3rem'}}>
-                <SmartToyIcon/>
+              <Link to="/gpt" className="link flex" style={{padding:'0.1rem'}}>
+                
+                <i class='bx bx-flashing'><SmartToyIcon/></i>
                 <span>AI CHAT</span>
               </Link>
             </li>

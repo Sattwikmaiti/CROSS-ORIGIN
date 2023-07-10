@@ -1,0 +1,44 @@
+.element{
+ margin:0.4rem;
+ padding:1rem;
+ background-color: aliceblue;
+ 
+}
+
+#demo-simple-select-label{
+    color:rgb(14, 16, 17);
+    padding:0.4rem;
+    margin:1rem;
+   
+   
+}
+
+.page{
+    background-color:rgb(34, 28, 28);
+    width:fit-content
+}
+
+
+#demo-simple-select{
+    width:10rem;
+  
+}
+
+
+.img img{
+    height:7rem;
+    width:100%
+}
+
+.result{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    flex-wrap: wrap;
+}
+.category{
+    background-color:aliceblue;
+    padding:0.4rem;
+    margin:1rem;
+    
+   
+}

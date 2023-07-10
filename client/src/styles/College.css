@@ -1,0 +1,66 @@
+.allcollege,.totaldata{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin:2rem;
+}
+
+.college{
+    margin:0.4rem;
+    padding:0.4rem;
+    background-color: aliceblue;
+    cursor:pointer
+}
+
+.box{
+    margin:0.2rem;
+    padding:0.4rem;
+    background-color: rgb(100, 142, 179);
+    display: flex;
+    flex-direction: column;
+    width:100%
+
+
+}
+
+.title{
+    font-size: large;
+    background-color:rgba(255, 255, 255,0.315);
+    margin: 0.4rem;
+    padding:0.4rem;
+
+}
+
+.links a{
+    color:rgb(9, 38,97);
+    padding:0.2rem
+}
+
+#exampleModalLongTitle{
+    color:whitesmoke
+}
+
+.hitme{
+    height: 34px;
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+    background-color: rgb(17, 15, 15);
+    box-shadow: none;
+     position: absolute;
+     top:4rem;
+    color: rgb(222, 236, 222);
+    font-size: 12px;
+    font-family: Courier;
+   
+   padding:0.4rem;
+    z-index: 2;
+}
+
+
+.thesearch{
+margin:2rem;
+display: flex;
+flex-direction: row;
+max-height:100px;
+position: fixed;
+left:30%
+}

@@ -26,6 +26,7 @@ button{
 .answer{
     margin:1.4rem;
     width:60%;
+    
 }
 
 .texttospeech{
@@ -35,6 +36,7 @@ button{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex:2;
     
 }
 
@@ -44,6 +46,7 @@ button{
     border: none;
     outline:none;
     border-radius: 5px;
+    
 }
 
 

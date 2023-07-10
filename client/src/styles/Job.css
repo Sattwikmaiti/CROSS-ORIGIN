@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:#e4e5e63f
+    background-color:#f7fafde3
     ;
     color:aliceblue
   
@@ -15,7 +15,7 @@
     border:2px solid rgba(230, 232, 233, 0.171);
     padding:1rem;
     margin:1rem;
-    border-radius:10px;
+   
     height:auto;
     
  
@@ -48,8 +48,8 @@
 
 .selected{
     max-height:3rem;
-    overflow-y: scroll;
-    width:10rem;
+    
+    width:20rem;
     border:2px solid rgb(162, 191, 196);
     margin:0.3rem;
     padding:0.6rem
