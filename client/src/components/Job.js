@@ -115,10 +115,11 @@ const [data, setData] = useState([]);
 const [allpost,setallpost]=useState([])
 useEffect(()=>
 {
+ // console.log(filter)
 
-  axios.get("http://localhost:8000/api/job/").then((res)=>setData(res.data)).catch((err)=>console.log(err))
+  axios.get(`http://localhost:8000/api/job/?cat=${filter}`).then((res)=>setData(res.data)).catch((err)=>console.log(err))
 
-},[data])
+},[filter,data])
 
 
 

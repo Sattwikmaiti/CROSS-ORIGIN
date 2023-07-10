@@ -108,21 +108,28 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+//multiple filter not working 
 
 // ?user=john&?cat=music
 router.get("/", async (req, res) => {
     //query looks for ? in router.get("/")
     const username = req.query.user;
     const catName = req.query.cat;
+    
     try {
       let todo;
       if (username) {
         todo = await Job.find({ username }).sort({createdAt:1});
       } else if (catName) {
+       // console.log( catName)
+        var temp = new Array();
+          temp = catName.split(","); // Convert comma-separated string to an array
+        
+       console.log(temp)
         //from categories array ...if inside it ..includes catname ...
         todo = await Job.find({
           categories: {
-            $in: [catName],
+            $in:temp,
           },
         }).sort({createdAt:1})
       } else {
@@ -135,21 +142,27 @@ router.get("/", async (req, res) => {
     }
   });
 
-
-  router.get('/search/:searchtext',async(req,res)=>{
+ // Required Correction in this route. Not Working Properly
+  
+  router.get('/all',async(req,res)=>{
+    console.log("Hi,",req.query)
     try {
-      const searchText = req.params.searchtext;
-      const query = { description: { $regex: searchText, $options: 'i' } };
-      const projection = {
-        _id: 0,
-        description: 1,
-      };
-      const todo = await Job.find(query).select(projection);
-      res.status(200).json(todo);
+  await Job.createIndex({description:"text"});
+     const searchText = req.query.t ;
+     const projection = {
+      _id: 0,
+      createdby: 1,
+    };
+  
+     const query = {$text: { $search:searchText}};
+      
+     const todos=await Job.find(query).project(projection);
+      res.status(200).json();
     } catch (err) {
       res.status(500).json(err);
     }
   })
+
 
 
 
