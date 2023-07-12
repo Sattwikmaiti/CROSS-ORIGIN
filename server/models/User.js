@@ -2,6 +2,16 @@ const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
   {
+    /*
+  {
+    "username":"Rahul",
+    "profilename":"Rahu",
+    "profileimagelink":"",
+    "email":"Rahul@gmail.com",
+    "password":"Rahul"
+
+}
+  */
 
   //you can not change username ,but can change profile name
     username: { type: String, required: true, unique: true },
@@ -13,9 +23,13 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    description:{type:String,default:""},
+    crosspoints:{type:Number,default:0},
     contributions:{type:Array,default:[]},
     followers:{type:Array,default:[]},
     savedarticles:{type:Array,default:[]},
+    //new chat component
+    chats:{type:Array,default:[]},
   },
   { timestamps: true }
 );

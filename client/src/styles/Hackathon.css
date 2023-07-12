@@ -2,6 +2,8 @@
  margin:0.4rem;
  padding:1rem;
  background-color: aliceblue;
+ height:24rem;
+ transform: scale(0.9);
  
 }
 
@@ -15,7 +17,12 @@
 
 .page{
     background-color:rgb(34, 28, 28);
-    width:fit-content
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    gap:1rem
+
 }
 
 
@@ -26,7 +33,7 @@
 
 
 .img img{
-    height:7rem;
+    height:12rem;
     width:100%
 }
 
@@ -40,5 +47,19 @@
     padding:0.4rem;
     margin:1rem;
     
+    width:auto;
+    
+    
    
+}
+.categorys{
+    height:10rem;
+    background-color:rgba(187, 199, 209, 0.336);
+    padding:0.4rem;
+    margin:1rem;
+    position:absolute;
+    
+    z-index:999;
+    
+    width:auto
 }

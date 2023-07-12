@@ -1,16 +1,23 @@
 import React ,{useState,useEffect}from 'react'
 import "../styles/Profile.css"
 import { ToastContainer, toast } from 'react-toastify';
-
+import { Chip } from '@mui/material';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
 import Box from '@mui/material/Box';
-import {useNavigate,Link} from "react-router-dom"
+import RedeemIcon from '@mui/icons-material/Redeem';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import banner from "../images/banner.jpg"
+import Fab from '@mui/material/Fab';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+
 
 const Profile = () => {
-  const navigate=useNavigate()
+  
   
 
     const handleSubmit = async (e) => {
@@ -80,47 +87,33 @@ const Profile = () => {
   return (
     <div>
        
-        <div className="back">
-            <p>
-            <Link to="/"> <i class='bx bx-left-arrow-alt '></i></Link></p> Back To home
-        </div>
-        
+       
 
         <div className="profile">
             <div className="profiledetails">
-                <img src={users?.user.profileimagelink} alt="" />
+
+            <div className="profilebanner">
+                <img src={banner} alt="" />
+                </div>
+              <div className="profileimage">
+             
+              <img src={users?.user.profileimagelink} alt="" />
+              </div>
+                
+                
 
             </div>
 
-            <div className="profiledetails">
+            <div className="profiledetails username">
+
                 USERNAME : {users?.user.username}
             </div>
-            <div className="profiledetails">
-                PROFILENAME : {users?.user.profilename}
-            </div>
-            <div className="profiledetails">
-            EMAIL : {users?.user.email}
-            </div>
-
-            <div className="profiledetails">
-              <div className="contributions">
-                {users?.user.contributions.length} Contributions
-              </div>
-            </div>
-            <div className="profiledetails">
-              <div className="followers">
-                {users?.user.followers.length} Followers
-              </div>
-            </div>
-            <div className="profiledetails">
-              <div className="contributions">
-                {users?.user.savedarticles.length} Saved Articles
-              </div>
-            </div>
-       
-
-
-            <div className="edit">
+            <div className="profiledetailsinfo">
+              <div className="leftwrapper">
+              <div className="profilename">
+             {users?.user.profilename} 
+             </div>
+              <div className="edit">
             <i class='bx bxs-edit' onClick={handleOpen}></i>
             <Modal
         open={open}
@@ -187,7 +180,79 @@ const Profile = () => {
         </Box>
       </Modal>
             </div>
+            <div className="desc">
+            Whereas disregard and contempt for human rights have resulted
+            Cloud Computing and Data Analytics @ Google | Cloud Track Lead @ Women Who Code Cloud | I empower women to excel in their Tech Careers | All opinions are my own.
+            Cloud Computing and Data Analytics @ Google | Cloud Track Lead @ Women Who Code Cloud | I empower women to excel in their Tech Careers | All opinions are my own.
+            <p>
+            <Chip label="Follow" variant="outlined" color="primary"/>
+            </p>
             
+            </div>
+                 
+              </div>
+             
+                <div className="rightwrapper">
+                <div className="profileemail">
+             {users?.user.email}
+            </div>
+            <div className="userstats">
+              
+            <div className="contributions stat">
+            
+                {users?.user.contributions.length+10} Contributions
+                
+                <Divider/>
+             
+            </div>
+            
+              <div className="followers stat">
+              
+                {users?.user.followers.length+18} Followers
+                
+
+                <Divider/>
+              
+            </div>
+           
+              <div className="contributions stat">
+               
+                {users?.user.savedarticles.length+2} Saved Articles
+               
+                <Divider  />
+               
+              </div>
+            
+              <div className="crosspoints stat">
+              
+        
+        {users?.user.savedarticles.length+users?.user.savedarticles.length +users?.user.followers.length+10} CrossPoints
+      
+               
+      <Divider/>
+              </div>
+              <div className="redeem stat">
+              <Fab variant="extended">
+        <RedeemIcon sx={{ mr: 1 }} />
+       Cross Swags
+      </Fab><Divider/>
+              </div>
+            
+            </div>
+              
+                </div>
+             
+            
+            </div>
+          
+            
+            
+
+            
+  
+
+
+           
 
 
            

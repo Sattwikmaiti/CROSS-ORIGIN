@@ -30,7 +30,7 @@ else {
       <div className="page">
 
       
-      <div className="category">
+      <div className="categorys">
         <InputLabel id="demo-simple-select-label" >Select Category to filter</InputLabel>
         <Select
           labelId="demo-simple-select-label"

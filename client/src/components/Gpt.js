@@ -16,20 +16,24 @@ const handlesubmit = async()=>{
 }
   return (
     <div className="gpt">
-
+ <div className="wrappertext">
+     
+        <TextToSpeech text={ans}/>
+       
+     
+      </div>
       <div className="inputtext">
+        <div className="text">
         <input type="text" placeholder="Enter your text here" onChange={(e)=>settext(e.target.value)}  />
          <button onClick={handlesubmit}>Submit</button>
-      </div>
-      <div className="wrappertext">
-      <div className="texttospeech">
-        <TextToSpeech text={ans}/>
-        </div>
 
-      <div className="answer" style={{color:'white'}}>
+        </div>
+        
+         <div className="answer" style={{color:'white'}}>
       <CharacterAnimation text={ans}/>
      </div>
       </div>
+     
       
       
       

@@ -8,6 +8,8 @@ import Job from './components/Job.js'
 import Gpt from './components/Gpt.js'
 import College from './components/College.js'
 import Hackathon from './components/Hackathon.js'
+import Map from "./components/Map.js"
+import Chat from "./components/Chat.js"
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,6 +31,8 @@ const App = () => {
         <Route exact path="/gpt" element ={<Gpt/>}/>
         <Route exact path="/college" element ={<College/>}/>
         <Route exact path="/hackathon" element ={<Hackathon/>}/>
+        <Route exact path="/map" element={<Map />}/>
+        <Route exact path="/chat" element={<Chat />}/>
       </Routes>
     </Router>
       

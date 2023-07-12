@@ -284,7 +284,7 @@
 .logoimage img{
   height:auto;
   width:20rem;
-mix-blend-mode: overlay;
+
   display:flex;
     flex-direction:row;
     justify-content:center;
@@ -307,7 +307,7 @@ mix-blend-mode: overlay;
   display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;mix-blend-mode:color-dodge;
+    align-items:center;
 }
 .section2_1{
   
@@ -344,14 +344,32 @@ mix-blend-mode: overlay;
     transition: all 0.5s ease;
 }
 
-
 body{
-  background-color: 	#161616;
-  
+  background-color:black
+}
+.body{
+  background-image: url('../images/logos.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+
     
 }
 
 .it:hover{ background-color:#333;
  transform:  translateY(-10px);
  
+}
+
+
+.div{
+  color:darkcyan;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.moto h3{
+  color:#2ccece;
+  font-size: 4rem;
+  
 }

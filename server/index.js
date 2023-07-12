@@ -7,8 +7,8 @@ const dotenv = require("dotenv");
 const userRoute = require("./routes/user");
 
 
-const eduRoute = require("./routes/edu");
-const hackathonRoute = require("./routes/hackathon");
+const chatRoute = require("./routes/chat");
+
 const jobRoute = require("./routes/job");
 
 const cors = require("cors");
@@ -26,8 +26,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoute);
-app.use("/api/edu", eduRoute);
-app.use("/api/hackathon", hackathonRoute);
+app.use("/api/chat", chatRoute);
+
 app.use("/api/job", jobRoute);
 
 

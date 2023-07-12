@@ -47,7 +47,7 @@ const FeedPost = ({props}) => {
                 <div class="edits"><i class='bx bxs-bookmark-star'></i>
   <i class='bx bxs-edit' ></i></div>
   <div className="postcredits">
-  <p>By: {props.createdby}</p>
+  <p>By: Sattwik</p>
     <p>Posted : {new Date(props.createdAt).toDateString()}    <a className="directlink" href={`${props.link}`} target="_blank" rel="noreferrer"><i class='bx bx-link-external'></i></a></p>
     
   </div>
