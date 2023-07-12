@@ -1,4 +1,6 @@
-OPEN SOURCE STARTUP : CROSS ORIGIN
+                                        OPEN SOURCE STARTUP : CROSS ORIGIN
+
+
 ![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/4dfef3aa-2705-48a0-a415-aa8c6297e822)
 
 Motivation : Connecting developers and students around the globe ,around the origin.
