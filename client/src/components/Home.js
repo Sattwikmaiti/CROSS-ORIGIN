@@ -1,12 +1,26 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState,useRef} from 'react'
 import axios from "axios"
 import {Link} from "react-router-dom"
-import AppBar from '@mui/material/AppBar';
-import logo from "../images/logos.jpeg"
+
+import logo from "../images/ll.png"
 import "../styles/Home.css"
+import { Reveal, Tween } from 'react-gsap';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
+import TextTransition from 'react-text-transition';
+import presets from 'react-text-transition';
 const Home = () => {
-  
+
+const TEXTS = ['World', 'Universe', 'Earth', 'Origin']
+const [index, setIndex] = React.useState(0);
+
+React.useEffect(() => {
+  const intervalId = setInterval(
+    () => setIndex((index) => index + 1),
+    1000, // every 3 seconds
+  );
+  return () => clearTimeout(intervalId);
+}, []);
+
     const [users,setusers]=useState()
    
     useEffect(() =>{
@@ -119,74 +133,79 @@ const Home = () => {
       </div>
     </nav>
 
-    <div className="hero">
-
-      <div className="section1">
-      
-      <AppBar position="static" color="grey" className="mobilenav" enableColorOnDark onClick={toggleSidebar}>
-        <div className="logo">
-          <div className="div">
-          <i class='bx bx-menu'></i>
-            </div> 
-            <div className="div">
-           <h4> CROSS ORIGIN</h4>
-            </div>
-   </div>
-     
-      
-
-        </AppBar>
-        
-        
-
-      </div>
+    <div className="heros">
 
 
-        <div className="section2">
-
-        <div className="section2_1">
-
-          
-
-          
-          <div className="moto">
-          <h3>Cross Origin</h3>
-            <p>
-              <div className="div">
-              "Cross Origin is driven by a powerful vision to bridge the gap between students and valuable job/internship opportunities they often miss out on.We, a  dynamic platform that gathers comprehensive information about ongoing hackathons. Our goal is to provide students with easy access to a centralized hub of hackathon opportunities from various sources. By curating and updating a database of hackathons, we ensure that students stay informed about the latest events and can participate in the ones that align with their interests and skills. We understand the significance of hackathons in fostering creativity, innovation, and collaboration, which are essential for personal and professional growth. Through our efforts, we aim to empower students by connecting them to these exciting opportunities and helping them explore their potential in a competitive and rapidly evolving technological landscape. We are Open-Source Organization and we are always open to new ideas and contributions. "
-          
-          
-              </div>
-           
-            </p>
-
+    <div class="containers">
  
-          </div>
+  <Tween to={{ x: '1500px', display:'none' }} duration={8} ease="back.out(1.7)">
+  <div class="overlay first"/>
+   
+  </Tween>
+  
+  
+
+  <Tween to={{ x: '1500px',display:'none'  }} duration={10} ease="back.out(1.7)">
+  <div class="overlay second"></div>
+   
+  </Tween>
+  <Tween to={{ x: '1500px',  display:'none'}} duration={12} ease="back.out(1.7)">
+  <div class="overlay third"></div>
+   
+  </Tween>
+  
 
 
-          </div>
 
 
-        </div>
 
-        <div className="section2_2">
+<img src={logo} alt="" class="product-img"/>
 
-          <div className="it">
-          <i class='bx bxl-github'></i>
+<div class="product-text">
+<Tween from={{ y: '-100px', opacity:0}} duration={2} ease="back.out(1.7)"  to={{ y: '50px', opacity:0.8 }}>
+<h1 class="product-title">crossorigin.</h1>
+  </Tween>
+   
+</div>
 
-          </div>
-          <div className="it">
-          <i class='bx bxs-envelope' ></i>
+<div class="product-desc">
+<Reveal repeat>
+  <Tween from={{ opacity: 0 }} duration={2} to={{opacity:1}}>
+    <p>Connect Across   <TextTransition springConfig={presets.wobbly} >
+    {TEXTS[index % TEXTS.length]}
+      </TextTransition>
+ with</p>
+  </Tween>
+</Reveal>
+    
+   
+</div>
 
-          </div>
-          <div className="it">
-          <i class='bx bxl-linkedin-square'></i>
+<div class="size">
+    <ul>
+        <span></span>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 
-          </div>
-
-        </div>
 
 
+<div class="bottom-right left-button">
+    <ul>
+        <li><i class='bx bxl-github'></i></li>
+        <li><i class='bx bxl-gmail' ></i></li>
+        <li><i class='bx bxl-linkedin-square' ></i></li>
+    </ul>
+</div>
+
+
+</div>
+
+
+
+        
 
 
 

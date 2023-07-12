@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -34,6 +36,115 @@
     <title>Cross Origin</title>
   </head>
   <body>
+    <script>
+        TweenMax.to('.first', 1.5, {
+            delay: .2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.second', 1.5, {
+            delay: .4,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.third', 1.5, {
+            delay: .6,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.logo', 1, {
+            delay: 1,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.menu', 1, {
+            delay: 1.2,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.search', .8, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.bag', 1, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom('.media ul li', 1, {
+            delay: 2,
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from('.size', 1, {
+            delay: 1.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom('.size ul li', .3, {
+            delay: 2,
+            opacity: 0,
+            y: 20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        TweenMax.from('.bottom-right ul li:first-child', .5, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-right ul li:last-child', .6, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-img', 1, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.product-title', 3, {
+            delay: 2.2,
+            opacity: 0,
+            y: 50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-img', 1, {
+            delay: 4.2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc p', 3, {
+            delay: 4.5,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc button', 3, {
+            delay: 6,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -48,3 +159,5 @@
     -->
   </body>
 </html>
+
+
