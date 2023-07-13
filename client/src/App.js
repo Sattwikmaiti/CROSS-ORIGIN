@@ -10,6 +10,8 @@ import College from './components/College/College.js'
 import Hackathon from './components/Hackathon/Hackathon.js'
 import Map from "./components/Map/Map.js"
 import Chat from "./components/Chat/Chat.js"
+import CrossDonation from './components/Donation/CrossDonation.js'
+import Post from './components/Posts/Post.js'
 import {
   BrowserRouter as Router,
   Routes,
@@ -33,6 +35,8 @@ const App = () => {
         <Route exact path="/hackathon" element ={<Hackathon/>}/>
         <Route exact path="/map" element={<Map />}/>
         <Route exact path="/chat" element={<Chat />}/>
+        <Route exact path="/donation" element={<CrossDonation />}/>
+        <Route exact path="/post" element={<Post />}/>
       </Routes>
     </Router>
       

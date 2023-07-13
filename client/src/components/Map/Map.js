@@ -24,6 +24,9 @@ const Map = () => {
       }));
   return (
     <div className="map">
+      <div className="liveparticipants">
+             30 Live Participants
+      </div>
         <div className="earth">
         <div>
 
