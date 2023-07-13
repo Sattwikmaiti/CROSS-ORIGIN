@@ -22,6 +22,12 @@ Images:
 ![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/ce826146-7e95-4061-90a7-d91434d7d115)
 ### Chat Section
 ![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/262cc50a-6058-494a-a21c-409750115a37)
+### Google Globe
+![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/b4f6694a-beea-45fa-aead-080a3f12744f)
+![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/6b6de080-c19c-4ffb-aa59-8ab322172041)
+![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/8fe336a5-8c20-4b8b-8d5a-79c91dee231d)
+
+
 ### Hackathon Websites
 ![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/cd82326f-0ea4-4a00-b618-17f7b9c0da31)
 ### AI friend
