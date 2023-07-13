@@ -11,7 +11,7 @@ We are working on the following features :
 2) Developer Hackathons/Oppurtunies
 3) College Connect : connecting colleges of world ,giving details to students , making them aware of open college events  .Helping students explore options on Colleges.
 4) Google Earth connect : Connecting with students/developers around the globe using google earth/map
-5) Chat rooms /Chat feature with peers
+5) Chat rooms /Chat feature with peers with WebRTC for videocalling .
 6) AI bot which will be your friend at times when you feel lonely and make you feel lighter during your dark times. As a developer ,we often face very frustrations and downs in life , but we dont have any one to share ... The AI trained will always be with you :)
 7) Blog post feature with comments to showcase personal lives and achiements
 8) Earn CROSS ORIGIN points ,and purchase our merchandise :)
