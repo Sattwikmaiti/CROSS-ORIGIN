@@ -15,6 +15,7 @@ We are working on the following features :
 6) AI bot which will be your friend at times when you feel lonely and make you feel lighter during your dark times. As a developer ,we often face very frustrations and downs in life , but we dont have any one to share ... The AI trained will always be with you :)
 7) Blog post feature with comments to showcase personal lives and achiements
 8) Earn CROSS ORIGIN points ,and purchase our merchandise :)
+9) Donation Section : A portal for supporting ngos ,donation camps and also reacreation purpose of earth
 If you like contribute in our open source project .. do fork it and make your PR :)
 
 
