@@ -1,0 +1,110 @@
+.earth {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #cfc3c3 inset, 0 0 20px 2px #d6c8c8;
+  }
+  
+  .earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+  }
+  
+  .earth > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+    background: url('https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg ');
+    /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
+    background-size: cover;
+  }
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  .orbit{
+    height:30rem;
+    width:30rem;
+    border:2px solid white;
+    border-radius:50%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    animation:rotate2 60s infinite linear
+  }
+
+  @keyframes rotate2 {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    
+  }
+  .moon{
+    height:3rem;
+    width:3rem;
+    border-radius:50%;
+    color:white;
+    background-color: rgb(61, 73, 73);
+    position: absolute;
+     top:25%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+   
+   
+  }
+
+  .moons{
+    height:3rem;
+    width:3rem;
+    border-radius:50%;
+    color:white;
+    background-color: rgb(11, 55, 56);
+    position: absolute;
+     top:25%;
+     left:90%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     padding:0.4rem;
+    
+   
+  }
+
+
+  .moons:hover,.moon:hover{
+    padding:1rem;
+cursor:pointer;
+    border:2px solid rgb(172, 153, 172);
+  }
+
+
+  .map{
+    background-image: url('../images/map.jpg');
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+   
+  }
+

@@ -1,0 +1,64 @@
+.element{
+ margin:0.4rem;
+ padding:1rem;
+ background-color: aliceblue;
+ height:24rem;
+ transform: scale(0.9);
+ 
+}
+
+#demo-simple-select-label{
+    color:white;
+    padding:0.4rem;
+    margin:1rem;
+    font-size:2rem
+   
+   
+}
+
+
+
+
+#demo-simple-select{
+    width:20rem;
+  
+}
+
+
+.img img{
+    height:12rem;
+    width:100%
+}
+
+.result{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+   
+    width:100%;
+}
+.category{
+    background-color:aliceblue;
+    padding:0.4rem;
+    margin:1rem;
+    
+    width:auto;
+    
+    
+   
+}
+.categorys{
+    height:10rem;
+    background-color:rgba(21, 35, 48, 0.932);
+    padding:0.4rem;
+    margin:1rem;
+    position:sticky;
+    left:40%;
+    z-index:999;
+    top:50%;
+
+    border:2px solid rgb(224, 217, 217);
+    
+    
+    width:28%
+}
+

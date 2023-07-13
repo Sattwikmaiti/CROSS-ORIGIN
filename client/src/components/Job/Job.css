@@ -1,0 +1,136 @@
+
+
+.createpost,.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#16293be3
+    ;
+    color:aliceblue
+  
+}
+
+.createpost{
+    border:2px solid rgba(230, 232, 233, 0.171);
+    padding:1rem;
+    margin:1rem;
+   
+    height:auto;
+    
+ 
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.left .image img{
+    height:5rem;
+    width:5rem;
+    border-radius:100px;
+    padding:0.3rem;
+    border:2px solid rgb(48, 91, 99);
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+     margin:1rem;
+    gap: 1rem;
+}
+
+
+
+.selected{
+    max-height:3rem;
+    
+    width:20rem;
+    border:2px solid rgb(162, 191, 196);
+    margin:0.3rem;
+    padding:0.6rem
+    
+}
+
+.description p{
+    padding:0.4rem
+}
+
+.post button{
+    border:none;
+    outline:none;
+    background-color:rgb(132, 159, 163);
+     color:whitesmoke;
+     padding:0.5rem
+}
+button:hover{
+cursor:pointer
+}
+
+
+@media screen and (max-width:700px) {
+    
+    .createpost{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    }
+    
+    
+}
+
+.job{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:1rem;
+   
+}
+
+    
+
+.dropdown,.postlink,.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center
+}
+
+
+.wrappertotal{
+    display: flex;
+    flex-direction: row;flex-wrap: wrap;
+
+}
+
+.searchbar
+{
+    margin:2rem;
+    background-color:rgba(238, 235, 235, 0.925);
+    height:40%;
+
+}
+.filter,.search{
+   margin:2rem
+}
+.search input{
+    padding:1rem
+}
+
+
+.description,.postlink,.dropdown{
+    background-color:cadetblue;
+    padding:1rem;
+    border-radius:10px;
+}
+
+body{
+    background-color:#333;
+}

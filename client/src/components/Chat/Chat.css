@@ -1,0 +1,188 @@
+.chatroom{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    
+}
+
+.personchat{
+    display:flex;
+    flex-direction: column;
+   flex:12;
+    gap:0.2rem;
+    
+}
+.allchats{
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+    flex:4;
+    border-left: 3px solid white;
+   
+    
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0.8rem;
+   
+   
+    
+    max-height: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.recepimage img,.navimage img{
+    height:3rem;
+    width:3rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.messagebox{
+    color:white;
+    background-color: #1e3149;
+    margin:1rem;
+    padding:2rem
+}
+.chatboxx{
+    height:80vh;
+    overflow-y: scroll;
+    background-image: url('../images/chatback.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+   
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin{
+    display: flex;
+    flex-direction:row-reverse;
+    
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-end-end-radius: 60px;
+    border-end-start-radius: 10px;
+    
+}
+
+.receiver{
+    
+   
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 60px;
+    
+}
+
+
+
+.messagetexts{
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+}
+.messagetime{
+    font-size: 0.6rem;
+    color:darkgray
+}
+
+.receipient{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1rem;
+    padding:0.5rem;
+    color:rgb(136, 148, 158);
+    background-color: rgb(20, 27, 37);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 60px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 0px;
+}
+
+.recepdetail,.lastmessage{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:1rem;
+        font-size: larger;
+        padding:0.5rem;
+        background-color: rgb(20, 27, 37);
+       
+}
+.lastmessage{
+    justify-content: space-between;
+    font-size: smaller; background-color:rgba(77, 74, 74, 0.363)
+   
+}
+
+
+.recepdetail{
+    background-color:rgb(64, 57, 128);
+    padding:0.1rem;
+    width:70%;
+    margin:0.5rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 70px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 60px;
+    
+}
+
+.allchats p{
+    padding:0.5rem;
+    background-color:rgb(129, 133, 185);
+    border-radius: 0.5rem;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%
+}
+.navperson{
+    padding:0.5rem;
+    background-color:rgb(51, 52, 70);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem
+}
+
+.navname{
+    font-size: larger;
+    color:azure;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.send input{
+    padding:2rem;
+    width:100%;
+    font-size:large;
+    color:azure;
+    outline: none;
+    border: none;
+    background-color: #1e3149;border-top-right-radius: 10px;
+    border-top-left-radius: 60px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 60px;
+
+
+}
+.send{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.send i{
+    color:aliceblue;padding:1.9rem;
+    font-size:2rem;background-color: #1e3149;
+
+}
