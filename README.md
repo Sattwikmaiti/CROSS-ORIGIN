@@ -17,7 +17,9 @@ We are working on the following features :
 8) Earn CROSS ORIGIN points ,and purchase our merchandise :)
 If you like contribute in our open source project .. do fork it and make your PR :)
 
-Images:
+
+https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/410e4b56-dde7-4de2-b122-96a733365932
+
 ### Profile 
 ![image](https://github.com/Sattwikmaiti/CROSS-ORIGIN/assets/90182231/ce826146-7e95-4061-90a7-d91434d7d115)
 ### Chat Section
