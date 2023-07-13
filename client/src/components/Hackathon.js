@@ -27,10 +27,8 @@ else {
   return (
     
       <>
-      <div className="page">
 
-      
-      <div className="categorys">
+<div className="categorys">
         <InputLabel id="demo-simple-select-label" >Select Category to filter</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -47,6 +45,9 @@ else {
           <MenuItem value={"Challenge"}>Challenge</MenuItem>
         </Select>
         </div>
+     
+
+      
         <div className="result">
           { 
 
@@ -83,7 +84,7 @@ else {
 
           }
         </div>
-        </div>
+       
         </>
     
     

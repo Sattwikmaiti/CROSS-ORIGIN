@@ -7,39 +7,151 @@
 
 .inputtext{
     flex:5;
-    background-color: rgb(72, 67, 77);
-    padding:0.4rem;
+    background-color: rgb(12, 36, 31);
+    padding: 1rem;
+    margin:2rem;
+    border-radius:30px;
+    
+
     
 }
-.wrappertext,.texttospeech{
+.answer{
+    overflow-y: scroll;
+    height:27rem;
+    background-color: rgba(0, 0, 0, 0.253);
+    padding:2rem;
+    line-height: 2rem;
+    font-size:1.2rem;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.texttospeech{
     flex:2;
-    background-color: rgb(74, 61, 87);
+    background-color: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(100px);
     display: flex;
     flex-direction: column;
     gap:0.2rem;
    justify-content: center;
-   padding:0.4rem
+   padding:1.5rem;
+   border-radius: 30px;
+   width:20rem
  
 }
 
+
+
 .texttospeech button{
-    padding:0.4rem
+    padding:0.4rem;
+    border:none;
+    outline:none;
+    color:white;
+    background-color: black;
 }
 .text button,.text input{
-    padding:0.4rem;
+    padding:1rem;
+    font-size:1.4rem;
+    
    
 }
+
+.text input{
+    border-radius: 30px;
+}
 label p{
-    margin:0;
-    padding:0;
+    margin:0.5rem;
+    padding:0.5rem;
     color: white;
+    background-color: rgba(0, 0, 0, 0.253);
     font-size: 0.8rem;
     font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label input{
+    width:100%;
+    color:black
+}
+
+label select{
+    border:none;
+    outline:none;
+    padding:0.5rem;
+    width:100%;
+    background-color: black;
+    color:white;
 }
 .text{
-    margin:1rem
+
+    margin:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrappertext{
-    height:25rem
+    height:25rem;
+    margin-top: 10rem;
+    margin-left:2rem
 }
+
+.question{
+    padding:0.4rem;
+    height:auto;
+}
+
+.answerrobo .image img{
+    height:4rem;
+    width:4rem;
+    border-radius: 50%;
+    margin:1rem;
+    padding:0.5rem;
+    border: 3px solid white;
+    
+}
+.answerrobo{
+    color:aliceblue;
+    margin:1rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.text img{
+    height:3rem;
+    width:3rem;
+    border-radius: 50%;
+}
+.answerrobo div i{
+    padding:0.5rem;
+    margin:0.4rem;
+    background-color: rgb(129, 117, 141);
+    font-size:2rem
+}
+
+.status{
+    width:10rem
+}
+.answerrobo2{
+color:azure;
+background-color: rgba(14, 12, 12, 0.178);
+padding:0.5rem
+}
+
+.text input{
+    margin-left:2rem;
+    margin-right:1rem;
+    width:80%;
+    border:none;
+    outline:none;
+    background-color:rgba(85, 114, 114, 0.397);
+    
+}
+
+.text div i{
+    font-size: 3rem;
+    color:rgba(85, 114, 114, 0.397);
+}
+
+.gpt{overflow-y: hidden;}

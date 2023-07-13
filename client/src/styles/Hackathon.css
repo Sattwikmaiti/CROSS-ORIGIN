@@ -8,26 +8,19 @@
 }
 
 #demo-simple-select-label{
-    color:rgb(14, 16, 17);
+    color:white;
     padding:0.4rem;
     margin:1rem;
+    font-size:2rem
    
    
 }
 
-.page{
-    background-color:rgb(34, 28, 28);
-    display:flex;
-    flex-direction: row;
-    
-    justify-content: space-between;
-    gap:1rem
 
-}
 
 
 #demo-simple-select{
-    width:10rem;
+    width:20rem;
   
 }
 
@@ -40,7 +33,8 @@
 .result{
     display: grid;
     grid-template-columns: auto auto auto ;
-    flex-wrap: wrap;
+   
+    width:100%;
 }
 .category{
     background-color:aliceblue;
@@ -54,12 +48,17 @@
 }
 .categorys{
     height:10rem;
-    background-color:rgba(187, 199, 209, 0.336);
+    background-color:rgba(21, 35, 48, 0.932);
     padding:0.4rem;
     margin:1rem;
-    position:absolute;
-    
+    position:sticky;
+    left:40%;
     z-index:999;
+    top:50%;
+
+    border:2px solid rgb(224, 217, 217);
     
-    width:auto
+    
+    width:28%
 }
+

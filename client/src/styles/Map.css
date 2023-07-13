@@ -101,10 +101,10 @@ cursor:pointer;
     background-image: url('../images/map.jpg');
     height:100vh;
     width: 100vw;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
-    mix-blend-mode: difference
+   
   }
 

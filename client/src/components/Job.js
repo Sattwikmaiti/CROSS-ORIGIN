@@ -148,7 +148,7 @@ const search =async()=>{
           
           <div className="left">
           <div className="image">
-          <img src={Body} alt="" />
+          <img src="https://www.storypick.com/wp-content/uploads/2022/12/16.jpeg" alt="" />
           </div>
           <div className="post">
             <button className="btn btn-primary" disabled={inputValueLink===''||inputValue===''||personName.length===0}  onClick={handlepost}>Create Post</button>
@@ -161,9 +161,9 @@ const search =async()=>{
               
             
             <div className="dropdown">
-
+<h6>Tag Categories</h6>
 <FormControl sx={{ m: 1, width: 300 }}>
-<InputLabel id="demo-multiple-checkbox-label" >Tag Categories</InputLabel>
+
 <Select
 labelId="demo-multiple-checkbox-label"
 id="demo-multiple-checkbox"
@@ -185,13 +185,14 @@ MenuProps={MenuProps}
 
 </div>
             <div className="postlink" >
-
-            <TextField style={{color:'white'}} id="filled-basic" label="PostLink" variant="filled"  value={inputValueLink} onChange={handleChangeLink}/>
+            <h6>Post Link</h6>
+            <TextField sx={{color:'white'}} id="filled-basic"  variant="filled"  value={inputValueLink} onChange={handleChangeLink}/>
 
             </div>
             <div className="description">
+            <h6>Enter Description</h6>
             <TextField style={{color:'white'}}
-      label="Enter Description "
+     
       multiline
       maxRows={1}
       value={inputValue}

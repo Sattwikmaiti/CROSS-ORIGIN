@@ -1,7 +1,5 @@
 /* Import Google font - Poppins */
-body{
-  background-color:#000000
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 * {
@@ -499,10 +497,34 @@ body{
 
 
 body{
-  background-color:#182828
+  background-color:#182828 !important
 }
 
 .reacttext{
   background-color:#707070;
   padding:2rem
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 53, 121); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #381e1e; 
 }

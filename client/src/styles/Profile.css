@@ -78,7 +78,7 @@ button:hover,.edit:hover{
      
      padding:0.5rem;
      margin:0.3rem;
-     mix-blend-mode:difference;
+     
      font-family: 'Russo One', sans-serif;
      
      
@@ -111,10 +111,7 @@ button:hover,.edit:hover{
 
 }
 
-.rightwrapper{
-    background-color:black;
-    mix-blend-mode:difference
-}
+
 .stat{
     padding:0.5rem;
     border-bottom:2px solid white

@@ -80,7 +80,7 @@ const College = () => {
             height: "34px",
             border: "1px solid darkgreen",
             borderRadius: "4px",
-            backgroundColor: "white",
+            backgroundColor: " white",
             boxShadow: "none",
             hoverBackgroundColor: "lightgreen",
             color: "darkgreen",

@@ -92,6 +92,7 @@ const TextToSpeech = ({ text }) => {
           min="0.5"
           max="2"
           step="0.1"
+          
           value={pitch}
           onChange={handlePitchChange}
         />

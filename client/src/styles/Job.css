@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:#f7fafde3
+    background-color:#16293be3
     ;
     color:aliceblue
   
@@ -91,7 +91,7 @@ cursor:pointer
     justify-content: space-between;
     flex-wrap: wrap;
     gap:1rem;
-    background-color:rgb(8, 8, 8);
+   
 }
 
     
@@ -122,4 +122,15 @@ cursor:pointer
 }
 .search input{
     padding:1rem
+}
+
+
+.description,.postlink,.dropdown{
+    background-color:cadetblue;
+    padding:1rem;
+    border-radius:10px;
+}
+
+body{
+    background-color:#333;
 }
