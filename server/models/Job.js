@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 /*
 {JSON
    "createdby":"Sattwik",
@@ -28,4 +28,7 @@ const JobSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Job", JobSchema);
+
+const Chat = mongoose.model("Job", JobSchema);
+
+export default Chat;

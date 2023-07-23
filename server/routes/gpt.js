@@ -17,6 +17,7 @@ const VECTOR_STORE_PATH = `${txtFilename}.index`;
 
 // 4. Define the main function runWithEmbeddings
 export const runWithEmbeddings = async (question) => {
+  console.log("ekhane eseche" )
   try {
     // 5. Initialize the OpenAI model with an empty configuration object
     const model = new OpenAI({});
@@ -40,19 +41,21 @@ export const runWithEmbeddings = async (question) => {
       // 6.2.5. Save the vector store to a file
       await vectorStore.save(VECTOR_STORE_PATH);
     }
-
+   
     // 7. Create a RetrievalQAChain by passing the initialized OpenAI model and the vector store retriever
     const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
-
+    
     // 8. Call the RetrievalQAChain with the input question, and store the result in the 'res' variable
     const res = await chain.call({
       query: question,
     });
-
+   
     // 9. Return the result
     return res;
   } catch (error) {
-    console.error(error);
+    //console.error(error);
     throw new Error('Something went wrong');
   }
 };
+
+

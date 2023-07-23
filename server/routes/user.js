@@ -1,8 +1,12 @@
-const router = require("express").Router();
-const jwt = require("jsonwebtoken");
-const User = require("../models/User");
-const CryptoJS = require("crypto-js");
-
+// const router = require("express").Router();
+// const jwt = require("jsonwebtoken");
+// const User = require("../models/User");
+// const CryptoJS = require("crypto-js");
+import express from "express";
+import jwt from "jsonwebtoken";
+import User from "../models/User.js";
+import CryptoJS from "crypto-js";
+const router = express.Router();
 const verifyToken = (req, res, next) => {
     const authHeader = req.headers.token;
     if (authHeader) {
@@ -148,4 +152,4 @@ const verifyToken = (req, res, next) => {
     
     
     
-module.exports = router;
+      export default router;

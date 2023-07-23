@@ -1,7 +1,12 @@
-const router = require("express").Router();
-const User = require("../models/User");
-const Chat = require("../models/chat");
-const Text = require("../models/text");
+// const router = require("express").Router();
+// const User = require("../models/User");
+// const Chat = require("../models/chat");
+// const Text = require("../models/text");
+import express from "express";
+import User from "../models/User.js";
+import Chat from "../models/chat.js";
+import Text from "../models/text.js";
+const router = express.Router();
 router.post("/",async(req,res)=>{
 console.log("chat api called")
     const text = new Text({
@@ -75,4 +80,4 @@ catch(err)
 )
 
 
-module.exports = router;
+export default router;

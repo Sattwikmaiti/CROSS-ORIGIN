@@ -171,7 +171,7 @@ React.useEffect(() => {
 <div class="product-desc">
 <Reveal repeat>
   <Tween from={{ opacity: 0 }} duration={2} to={{opacity:1}}>
-    <p>Connect Across   <TextTransition springConfig={presets.wobbly} >
+    <p>A Support To Growing <br />Seed across   <TextTransition springConfig={presets.wobbly} >
     {TEXTS[index % TEXTS.length]}
       </TextTransition>
  with</p>
